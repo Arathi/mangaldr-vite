@@ -1,0 +1,36 @@
+{
+    "name": "mangaldr",
+    "namespace": "com.undsf.userjs.mangaldr",
+    "copyright": null,
+    "version": null,
+    "description": null,
+    "icon": null,
+    "icon64": null,
+    "grants": [
+        "GM_addStyle",
+        "GM_listValues",
+        "GM_getValue",
+        "GM_setValue",
+        "GM_deleteValue",
+        "GM_log"
+    ],
+    "author": "Arathi of Nebnizilla",
+    "homepage": null,
+    "antifeature": null,
+    "requires": [],
+    "resources": [],
+    "includes": [],
+    "matches": [
+        "https://telegra.ph/*"
+    ],
+    "excludes": [],
+    "run-at": null,
+    "sandbox": null,
+    "connects": [],
+    "updateURL": null,
+    "downloadURL": null,
+    "supportURL": null,
+    "webRequest": null,
+    "unwrap": null,
+    "notes": []
+}
