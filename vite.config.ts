@@ -10,10 +10,11 @@ function generateBannerLine(
     padding: number = 17
 ) {
     if (value == null) return '';
+    if (value.length == 0) return '';
 
     let line = `// @${param}`;
     let amount = padding - line.length;
-    if (amount <= 0) amount = 1;
+    if (amount <= 0) amount = 2;
     line += ' '.repeat(amount);
     line += value + "\n";
     return line;
@@ -29,7 +30,7 @@ function generateBanner() {
 
     banner += generateBannerLine("version", userscript.version != null ? userscript.version : pkgInfo.version);
 
-    banner += generateBannerLine("description", userscript.description);
+    banner += generateBannerLine("description", userscript.description != null ? userscript.description : pkgInfo.description);
 
     for (let grant of userscript.grants) {
         banner += generateBannerLine("grant", grant);

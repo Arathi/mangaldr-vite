@@ -12,5 +12,8 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*", 
+    "../commons-ts/src/**/*"
+  ]
 }
